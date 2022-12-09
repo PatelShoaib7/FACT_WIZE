@@ -13,14 +13,9 @@ import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPane
     Stack,
      } from '@chakra-ui/react'
     import { AddIcon, CheckIcon, CloseIcon, EditIcon, MinusIcon} from '@chakra-ui/icons'
-
     const Dataa=[
       {
-        "id": 1,
-        "first": "Aidan",
-        "last": "Wang",
-        "dob": "1973-10-16",
-        "gender": "male",
+        "id": 1, "first": "Aidan",  "last": "Wang",  "dob": "1973-10-16","gender": "male",
         "email": "aidan.wang@example.com",
         "picture": "https://randomuser.me/api/portraits/med/men/93.jpg",
         "country": "New Zealand",
@@ -241,8 +236,7 @@ export const Home = () => {
     const [data , setData]=useState([]);
      const [DOB ,setDOB]=useState('');
      const [serchData , setSearch]=useState([]);
-    
-    
+   
     const getData = async()=>{
         let res = await fetch('http://localhost:8000/data')
         let Comigdata = await res.json();
@@ -283,28 +277,12 @@ export const Home = () => {
     <div><h1> </h1>
             <Box border="1px solid black" w={['90%','90%','40%','40%']} m="auto" h="90vh"
                  borderRadius={'8px'} mt="3rem"
-            >
-             
+            >   
           <Box  border="1px solid lightgrey" w={'90%'} m="auto" p="5" mt="5" h="80px" borderRadius={'3px'}>
               <Input  onChange={(e)=> handleChange(e)} placeholder="enter star name"/>
-                
-          </Box>
+            </Box>
 
              {/* SHOW SERACH REST ELESE EMPTY */}
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
           <Box  border="2px solid grey" w={'90%'}   borderRadius="10px"
                 m="auto" h="75%" mt="10" overflow={'scroll'} scrollMargin="-0.5" p="3"
              >
@@ -362,8 +340,6 @@ export const Home = () => {
              }
              </Box>
             </Box>
-
-
        <Box>
        
     </Box>
