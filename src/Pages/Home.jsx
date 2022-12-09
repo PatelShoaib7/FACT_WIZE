@@ -276,10 +276,6 @@ export const Home = () => {
       alert('data is delted')
       setData(upDated)
    }
-   const handleEDIT =()=>{
- 
-   }
-
     useEffect(()=>{
     getData();
     },[serchData])
